@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pslides by onjin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/onjin/pslides">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/onjin/pslides/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/onjin/pslides/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Pslides</h1>
+          <p>javascript page slides</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/onjin">onjin</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>PSlides - javascript page slides</h1>
+
+<p>Simple javascript slides with MochiKit. Just render your content and run PSlides to make auto slides</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>MochiKit javascript library <a href="http://www.mochikit.com/">http://www.mochikit.com/</a></li>
+</ul><h2>API</h2>
+
+<ul>
+<li>
+<p>PSlides.init(slide_element_search_exp, elements_on_slide_count, slide_width, slide_height) - initialize PSlides</p>
+
+<ul>
+<li>slide_element_search_exp - expression for MochiKit.Selector.$$() to search your slide elements</li>
+<li>elements_on_slide_count - you can paste 1 or more elements on one slide</li>
+<li>slide_width - width of the slide (clipped #content)</li>
+<li>slide_height - height of the slide (clipped #content)</li>
+</ul>
+</li>
+<li><p>PSlides.next() - animate to next slide; last slide will rewind to first slide</p></li>
+<li><p>PSlides.prev() - animate to prev slide; first slide will rewind to last slide</p></li>
+<li><p>PSlides.show_navigation() - show #pslides_navigation element - usualy navigation for pslides</p></li>
+<li><p>PSlides.hide_navigation() - hide #pslides_navigation element - usualy navigation for pslides</p></li>
+<li><p>PSlides.move(position) - move slides #content to given position - used by 'next/prev'</p></li>
+<li><p>PSlides.lock() - lock PSlides, previous functions will not work - used by 'move' </p></li>
+<li><p>PSlides.unlock() - unlock PSlides, previous functions will work - used by 'move'</p></li>
+</ul><h2>Example</h2>
+
+<ul>
+<li>look at demo.html in repository</li>
+</ul><h2>Todo</h2>
+
+<ul>
+<li>remove hardcoded #overcontent, #content and #pslides_navigation from code - to use multiple slides on one page</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
